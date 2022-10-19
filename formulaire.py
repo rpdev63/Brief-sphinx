@@ -11,10 +11,7 @@ df = pd.read_csv(r'liste_employes.csv')
 
 
 def write_line_in_csv(first_name,name, date, poste) :
-    list_employes = pd.read_csv("liste_employes.csv")
-    df_new_line =  pd.DataFrame([[first_name,name,date,poste]], columns=['Nom', 'Prénom', 'Date embauche', 'Poste'])
-    list_employes = pd.concat([list_employes,df_new_line], ignore_index=True, axis=1)
-    list_employes.to_csv('liste_employes.csv', index = False)
+    pass
 
 def check_form(first_name, name, poste) :
     badValue = True
